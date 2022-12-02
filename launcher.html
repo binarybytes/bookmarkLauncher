@@ -12,10 +12,27 @@
       margin: 0;
     }
 
+    table {
+  font: 20px "Courier New", Monaco, monospace;;
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+    td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 5px;
+}
+
+    tr:nth-child(even) {
+  background-color: #191919;
+}
+
     body {
 
       display: flex;
-      margin: 1em;
+      margin: 100em;
       padding: 1em;
     }
 
@@ -45,24 +62,13 @@
       padding: 1em 0;
     }
 
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      white-space: nowrap;
-      text-align: center;
-    }
-
-    li:first-child {
-      font-weight: bold;
-      line-height: 2em;
-    }
+   
 
     img {
-      border: 2px solid #313131;
+      border: 1px solid #313131;
       height: auto;
       object-fit: cover;
-      object-position: 5% 5%;
+      object-position: 50% 50%;
       width: 1em;
     }
   </style>
@@ -71,56 +77,72 @@
 <body bgcolor="black">
   <nav>
 
-    <h1>Quick Launcher v2</h1>
+    <h1>Quick Launcher v2 
+        >>>by NikS<<
+</h1>
 
-    <ul>
-      <li>SIEMS</li>
-      <li><a href="https://link.one/">QRadar</a></li> <img src="library_picture.jpg">
-      <li><a href="https://link.one/">QRadar Dev</a></li>
-      <li><a href="https://link.one/">Splunk Dev</a></li>
-      <li><a href="https://link.two/">Splunk Prod</a></li>
-    </ul>
+<table border="1" width="35%" cellspacing="10" cellpadding="5" style="margin-block: 20px">
+      <tr>
+      <th>SIEMS</th>
+      </tr>
+      <tr>
+      <td><img src="QR2.png"> <a href="https://link.one/">QRadar Prod</a> </td> </tr>
+      <tr>
+      <tr><td>
+        <img src="QR2.png"> <a href="https://link.one/">QRadar Dev</a></td></tr>
+      <tr><td><img src="splunk.png"> <a href="https://link.one/">Splunk Dev</a></td></tr>
+      <tr><td><img src="splunk.png"> <a href="https://link.two/">Splunk Prod</a></td>
+      </tr>
+  </table>
 
-    <ul>
-      <li>Security Controls/Consoles</li>
-      <li><a href="https://link.one/">FE/Trellix</a></li>
-      <li><a href="https://link.three/">IronPort CES</a></li>
-      <li><a href="https://link.two/">IronPort Perimeter</a></li>
-      <li><a href="https://link.three/">IronPort Backup Perimeter</a></li>
-      <li><a href="https://link.three/">FireEye EX</a></li>
-      <li><a href="https://link.three/">IronPort Quarantine</a></li>
-    </ul>
+    <table border="1" width="35%" cellspacing="10" cellpadding="5" style="margin-inline: 20px">
+      <tr>
+      <th>Security Controls/Consoles</th>
+      </tr>
+      <tr>
+        <td><a href="https://link.one/">FE/Trellix</a></td>
+      
+      <tr><td><a href="https://link.three/">IronPort CES</a></td></tr>
+      <tr>
+      <td><a href="https://link.two/">IronPort Perimeter</a></td></tr>
+      <tr>
+      <td><a href="https://link.three/">IronPort Backup Perimeter</a></td>
+    </tr>
+     <tr> <td><a href="https://link.three/">FireEye EX</a></td></tr>
+      <tr><td><a href="https://link.three/">IronPort Quarantine</a></td></tr>
+    </table>
 
-    <ul>
-      <li>Section 3</li>
-      <li><a href="https://link.one/">Item 1</a></li>
-      <li><a href="https://link.two/">Item 2</a></li>
-      <li><a href="https://link.three/">Item 3</a></li>
-    </ul>
+     <table border="1" width="35%" cellspacing="10" cellpadding="5" style="margin-block: 20px">
+      <tr>
+      <th>Tools</th>
+      </tr>
+      <tr>
+      <td><img src="QR2.png"> <a href="https://link.one/">QRadar</a> </td> </tr>
+      <tr>
+      <tr><td>
+        <img src="QR2.png"> <a href="https://link.one/">QRadar Dev</a></td></tr>
+      <tr><td><img src="splunk.png"> <a href="https://link.one/">Splunk Dev</a></td></tr>
+      <tr><td><img src="splunk.png"> <a href="https://link.two/">Splunk Prod</a></td>
+      </tr>
+  </table>
+  
+   <table border="1" width="35%" cellspacing="10" cellpadding="5" style="margin-inline: 20px">
+      <tr>
+      <th>News</th>
+      </tr>
+      <tr>
+      <td><img src="QR2.png"> <a href="https://link.one/">Cyber</a> </td> </tr>
+      <tr>
+      <tr><td>
+        <img src="QR2.png"> <a href="https://link.one/">Finance</a></td></tr>
+      <tr><td><img src="splunk.png"> <a href="https://link.one/">Government</a></td></tr>
+      <tr><td><img src="splunk.png"> <a href="https://link.two/">International</a></td>
+      </tr>
+  </table>
 
-    <ul>
-      <li>Section 4</li>
-      <li><a href="https://link.one/">Item 1</a></li>
-      <li><a href="https://link.two/">Item 2</a></li>
-      <li><a href="https://link.three/">Item 3</a></li>
-    </ul>
 
-    <ul>
-      <li>Section 5</li>
-      <li><a href="https://link.one/">Item 1</a></li>
-      <li><a href="https://link.two/">Item 2</a></li>
-      <li><a href="https://link.three/">Item 3</a></li>
-    </ul>
-
-    <ul>
-      <li>Section 6</li>
-      <li><a href="https://link.one/">Item 1</a></li>
-      <li><a href="https://link.two/">Item 2</a></li>
-      <li><a href="https://link.three/">Item 3</a></li>
-    </ul>
   </nav>
 
-<img src="library_picture.jpg">
 
 </body>
 </html>
