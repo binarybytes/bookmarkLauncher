@@ -19,14 +19,20 @@
 
 }
 
-    td, th {
+    th {
+  border: 1px solid #dddddd;
+  background-color: #071936;
+  text-align: center;
+  padding: 1px;
+}
+    td {
   border: 1px solid #dddddd;
   text-align: left;
-  padding: 5px;
-}
+  padding: 1px;
+    }
 
     tr:nth-child(even) {
-  background-color: #191919;
+  background-color: #010a1a;
 }
 
     body {
@@ -73,7 +79,7 @@
     }
 
 .dropbtn {
-  background-color: #191919;
+  background-color: #010a1a;
   color: #63c573;
   padding: 1px;
   font: 20px "Courier New", Monaco, monospace;
@@ -88,7 +94,8 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #191919;
+  background-color: #010a1a;
+  border: 1px solid #dddddd;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -101,39 +108,49 @@
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #424242;}
+.dropdown-content a:hover {background-color: #626363;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #191919;}
+.dropdown:hover .dropbtn {background-color: #424242;}
 
   </style>
 </head>
 
-<body bgcolor="black">
+<body bgcolor="#010a1a">
   <nav>
 
-    <h1>Quick Launcher v2 
-        ~~>>by NikS<<~~
-</h1>
+    <h1>Quick Launcher v2</h1>
 
-<table border="1" width="35%" cellspacing="10" cellpadding="5" style="margin-block: 20px">
+<table style="margin-block: 50px">
       <tr>
-      <th>SIEMS</th>
+      <th>SIEM</th>
       </tr>
+
+
       <tr>
-      <td><img src="QR2.png"> <a href="https://link.one/">QRadar Prod</a> </td> </tr>
-      <tr>
-      <tr><td>
-        <img src="QR2.png"> <a href="https://link.one/">QRadar Dev</a></td></tr>
-      <tr><td><img src="splunk.png"> <a href="https://link.one/">Splunk Dev</a></td></tr>
-      <tr><td><img src="splunk.png"> <a href="https://link.two/">Splunk Prod</a></td>
+      <td><img src="QR2.png">
+        <div class="dropdown">
+  <button class="dropbtn">QRadar</button>
+  <div class="dropdown-content">
+    <a href="#">Prod</a>
+    <a href="#">Dev</a>
+  </div></td> </tr>
+
+
+      <tr><td><img src="splunk.png"> 
+  <div class="dropdown">
+  <button class="dropbtn">Splunk</button>
+  <div class="dropdown-content">
+    <a href="#">Prod</a>
+    <a href="#">Dev</a>
+  </div></td> </tr></td></tr>
       </tr>
   </table>
 
-    <table border="1" width="35%" cellspacing="10" cellpadding="5" style="margin-inline: 20px">
+<table style="margin-inline: 50px">
       <tr>
-      <th>Security Controls/Consoles</th>
+      <th>Security Controls</th>
       </tr>
       <tr>
         <td><a href="https://link.one/">FE/Trellix</a></td>
@@ -148,26 +165,36 @@
       <tr><td><a href="https://link.three/">IronPort Quarantine</a></td></tr>
     </table>
 
-     <table border="1" width="35%" cellspacing="10" cellpadding="5" style="margin-block: 20px">
+
+
+<table style="margin-block: 50px">
       <tr>
       <th>Tools</th>
       </tr>
+
+
       <tr>
-      <td><img src="QR2.png"> <a href="https://link.one/">QRadar</a> </td> </tr>
-      <tr>
+      <td><img src="QR2.png"> <a href="https://link.one/">OSINT</a> </td> </tr>
+      
       <tr><td>
-        <img src="QR2.png"> <a href="https://link.one/">QRadar Dev</a></td></tr>
-      <tr><td><img src="splunk.png"> <a href="https://link.one/">Splunk Dev</a></td></tr>
-      <tr><td><img src="splunk.png"> <a href="https://link.two/">Splunk Prod</a></td>
+        <img src="QR2.png"> <a href="https://link.one/">Internal</a></td></tr>
+
+      <tr><td><img src="splunk.png"> <a href="https://link.one/">External</a></td></tr>
+
+      <tr><td><img src="splunk.png"> <a href="https://link.two/">Extra</a></td>
       </tr>
   </table>
   
-   <table border="1" width="35%" cellspacing="10" cellpadding="5" style="margin-inline: 20px">
+
+
+
+<table cellpadding="2" style="margin-inline: 50px">
       <tr>
       <th>News</th>
       </tr>
-      <tr>
+      
 
+      <tr>
       <td><img src="QR2.png">
 <div class="dropdown">
   <button class="dropbtn">Cyber</button>
@@ -177,17 +204,21 @@
     <a href="https://threatpost.com/">Threat Post</a>
   </div>
 </div></a> </td> </tr>
+
+
       <tr>
       <tr><td>
         <img src="QR2.png"> <a href="https://link.one/">Finance</a></td></tr>
+
+
       <tr><td><img src="splunk.png"> <a href="https://link.one/">Government</a></td></tr>
+
+
       <tr><td><img src="splunk.png"> <a href="https://link.two/">International</a></td>
       </tr>
+
+
   </table>
-
-
   </nav>
-
-
 </body>
 </html>
