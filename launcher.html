@@ -1,127 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 <head>
-  <style>
-    html {
-      align-items: center;
-      color: #63c573;
-      display: flex;
-      font: 20px "Courier New", Monaco, monospace;
-      height: 100%;
-      justify-content: center;
-      margin: 0;
-    }
+  <title>Bookmark Launcher by NikS</title>
+  <div id="clock" onload="showTime()"></div>
+  <link rel="stylesheet" href="./styles.css">
 
-    table {
-  font: 20px "Courier New", Monaco, monospace;;
-  border-collapse: collapse;
-  width: 100%;
+  <script src="./main.js"></script>
+   </head>
 
-}
-
-    th {
-  border: 1px solid #dddddd;
-  background-color: #071936;
-  text-align: center;
-  padding: 1px;
-}
-    td {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 1px;
-    }
-
-    tr:nth-child(even) {
-  background-color: #010a1a;
-}
-
-    body {
-
-      display: flex;
-      margin: 100em;
-      padding: 1em;
-    }
-
-    h1 {
-      font-size: 2em;
-      grid-column: 1 / -1;
-      margin: 0;
-      text-align: center;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    a:focus,
-    a:hover {
-      color: #1d81b2;
-    }
-
-    nav {
-      display: grid;
-      grid-row-gap: 1em;
-      grid-template-columns: 1fr 1fr; 
-      margin: 0 1em;
-      min-width: 24em;
-      padding: 1em 0;
-    }
-
-   
-
-    img {
-      border: 1px solid #313131;
-      height: auto;
-      object-fit: cover;
-      object-position: 50% 50%;
-      width: 1em;
-    }
-
-.dropbtn {
-  background-color: #010a1a;
-  color: #63c573;
-  padding: 1px;
-  font: 20px "Courier New", Monaco, monospace;
-  border: none;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #010a1a;
-  border: 1px solid #dddddd;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: #0ad2f5;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #626363;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: #424242;}
-
-  </style>
-</head>
-
-<body bgcolor="#010a1a">
   <nav>
 
-    <h1>Quick Launcher v2</h1>
+<body bgcolor="#010a1a">
 
+
+    
 <table style="margin-block: 50px">
       <tr>
       <th>SIEM</th>
@@ -129,7 +21,7 @@
 
 
       <tr>
-      <td><img src="QR4.jpg">
+      <td><img src="./pics/QR4.jpg">
         <div class="dropdown">
   <button class="dropbtn">QRadar</button>
   <div class="dropdown-content">
@@ -138,7 +30,7 @@
   </div></td> </tr>
 
 
-      <tr><td><img src="splunk.png"> 
+      <tr><td><img src="./pics/splunk.png"> 
   <div class="dropdown">
   <button class="dropbtn">Splunk</button>
   <div class="dropdown-content">
@@ -153,7 +45,7 @@
       <th>Security Controls</th>
       </tr>
       <tr>
-        <td><img src="fe.jpg">
+        <td><img src="./pics/fe.jpg">
         <div class="dropdown">
            <button class="dropbtn">FireEye/Trellix</button>
         <div class="dropdown-content">
@@ -163,7 +55,7 @@
         </div></tr></td>
       
       <tr> 
-        <td><img src="cisco.jpg">
+        <td><img src="./pics/cisco.jpg">
         <div class="dropdown">
            <button class="dropbtn">IronPort</button>
         <div class="dropdown-content">
@@ -173,7 +65,7 @@
       </div></td></tr>
 
       <tr> 
-        <td><img src="cs.jpg">
+        <td><img src="./pics/cs.jpg">
         <div class="dropdown">
            <button class="dropbtn">CrowdStrike</button>
         <div class="dropdown-content">
@@ -193,14 +85,14 @@
 
 
       <tr>
-      <td><img src="osint.jpg"> <a href="###">OSINT</a> </td> </tr>
+      <td><img src="./pics/osint.jpg"> <a href="###">OSINT</a> </td> </tr>
       
       <tr><td>
-        <img src="internal.jpg"> <a href="###">Internal</a></td></tr>
+        <img src="./pics/rbc.jpg"> <a href="###">Internal</a></td></tr>
 
-      <tr><td><img src="pa.jpg"> <a href="###">Tickets</a></td></tr>
+      <tr><td><img src="./pics/pa.jpg"> <a href="###">Tickets</a></td></tr>
 
-      <tr><td><img src="extra.jpg"> <a href="###">Extra</a></td>
+      <tr><td><img src="./pics/extra.jpg"> <a href="###">Extra</a></td>
       </tr>
   </table>
   
@@ -214,7 +106,7 @@
       
 
       <tr>
-      <td><img src="wifi.jpg">
+      <td><img src="./pics/wifi.jpg">
 <div class="dropdown">
   <button class="dropbtn">Cyber</button>
   <div class="dropdown-content">
@@ -227,7 +119,7 @@
 
       <tr>
       <tr><td>
-        <img src="doh.jpg">
+        <img src="./pics/doh.jpg">
   <div class="dropdown">
     <button class="dropbtn">Finance</button>
     <div class="dropdown-content">
@@ -238,7 +130,7 @@
 </div></td></tr>
 
 
-      <tr><td><img src="gov.jpg">
+      <tr><td><img src="./pics/gov.jpg">
   <div class="dropdown">
     <button class="dropbtn">Government</button>
     <div class="dropdown-content"> 
@@ -248,7 +140,7 @@
  </div></td></tr>
 
 
-      <tr><td><img src="can.jpg"> 
+      <tr><td><img src="./pics/can.jpg"> 
   <div class="dropdown">
     <button class="dropbtn">International</button>
     <div class="dropdown-content">
